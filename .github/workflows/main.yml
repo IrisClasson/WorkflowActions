@@ -6,4 +6,4 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Print version
-        run: echo "run from main"
+        run: echo "run from legacy app branch"
