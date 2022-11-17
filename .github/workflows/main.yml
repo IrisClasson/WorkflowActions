@@ -1,5 +1,9 @@
 name: Test
 
-on:push
-
-run: echo "This is run from Main"
+on: [push,workflow_dispatch]
+jobs:
+  step1:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Print version
+        run: echo "run from main"
